@@ -11,7 +11,9 @@ build:
 install:
 
 	@mkdir -p $(DESTDIR)/usr/share/gnome-shell/extensions/
+	@mkdir -p $(DESTDIR)/usr/share/glib-2.0/schemas/
 	@cp -r extensions/* $(DESTDIR)/usr/share/gnome-shell/extensions/
+	@cp -r schemas/* $(DESTDIR)/usr/share/glib-2.0/schemas/
 
 uninstall:
 

@@ -6,4 +6,4 @@
 
 override_dh_auto_install:
 
-	$(MAKE) DESTDIR=$(CURDIR)/debian/gnome-extensions-gnamon install
+	$(MAKE) DESTDIR=$(CURDIR)/debian/gnome-shell-extensions-gnamon install

@@ -1,11 +1,10 @@
-gnome-extensions-gnamon (1.0-1) unstable; urgency=medium
- 
+gnome-shell-extensions-gnamon (1.0-1) unstable; urgency=medium
+
   * Versión inicial con las extensiones: User Themes, Axe Menu,
     Settings Center, Media Player Indicator, Coverflow ALT+TAB,
     Dash to Dock, Frippery Shut Down Menu, Frippery Move Clock,
     Status Area Horizontal Spacing, Window List, Window Overlay
     Icons, Message Notifier, Show Desktop Button, Remove User
     Name, Nothing To Do y Old Network Manager.
- 
- -- Alin Andrei <webupd8@gmail.com>  Fri, 17 Aug 2012 14:44:29 +0300
 
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Fri, 11 Jan 2013 20:26:34 -0430

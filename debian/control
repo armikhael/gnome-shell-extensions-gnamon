@@ -1,12 +1,12 @@
-Source: gnome-extensions-gnamon
+Source: gnome-shell-extensions-gnamon
 Section: gnome
 Priority: extra
-Maintainer: Alin Andrei <luis@huntingbears.com.ve>
+Maintainer: Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>
 Build-Depends: debhelper (>= 7)
 Standards-Version: 3.8.4
 
-Package: gnome-extensions-gnamon
+Package: gnome-shell-extensions-gnamon
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, gtk2-engines-murrine, gtk2-engines-pixbuf, gtk3-engines-unico
+Depends: ${shlibs:Depends}, ${misc:Depends}, dconf-gsettings-backend | gsettings-backend, gnome-shell (>= 3.4), gnome-shell (<< 3.5), gir1.2-gtop-2.0
 Description: Conjunto de extensiones para el tema Gnamon
   Conjunto de extensiones para el tema Gnamon
