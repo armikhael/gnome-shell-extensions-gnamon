@@ -304,7 +304,7 @@ ConfigManager.prototype = {
     loadConfig: function() {
         let data = GLib.file_get_contents(this.config_file)[1].toString();
         this._conf = JSON.parse(data);
-        this.display_activites = this.get_val('display_activites', true);
+        this.display_activites = this.get_val('display_activites', false);
         this.activites_position = this.get_val('activites_position', false);
         this.defaultBookmarksCount = this.parent.placesManager.getBookmarks().length>5?5:0;
         this.defaultBookmarksCount = 5;
@@ -317,8 +317,8 @@ ConfigManager.prototype = {
             Main.panel._rightBox.remove_actor(activitiesButton.actor);
         }
         this.button_label = decodeURIComponent(this.get_val('button_label', _("Menu")));
-        this.display_icon = this.get_val('display_icon', true);
-        this.is_hot_corner = this.get_val('is_hot_corner', true);
+        this.display_icon = this.get_val('display_icon', false);
+        this.is_hot_corner = this.get_val('is_hot_corner', false);
         if(!this.is_hot_corner){
             this.parent._hotCorner.actor.hide();
             activitiesButton._hotCorner.actor.show();
@@ -328,7 +328,7 @@ ConfigManager.prototype = {
         }
         this.icon_name = this.get_val('icon_name', 'start-here');
         this.parent._icon.set_icon_name(this.icon_name);
-        this.start_with_fav = this.get_val('start_with_fav', true);
+        this.start_with_fav = this.get_val('start_with_fav', false);
         if(!this.display_icon)
             this.parent._iconBox.hide();
         else
@@ -340,28 +340,28 @@ ConfigManager.prototype = {
             this.parent._label.hide();
         }
         
-        this.main_icon_size = this.get_val('main_icon_size', 18);
+        this.main_icon_size = this.get_val('main_icon_size', 16);
         this.parent._icon.set_icon_size(this.main_icon_size);
-        this.main_box_width = this.get_val('main_box_width', 705);
-        this.left_pane_width = this.get_val('left_pane_width', 165);
+        this.main_box_width = this.get_val('main_box_width', 800);
+        this.left_pane_width = this.get_val('left_pane_width', 200);
         this.display_places = this.get_val('display_places', true);
         this.display_bookmarks = this.get_val('display_bookmarks', true);
         this.display_system = this.get_val('display_system', true);
         this.display_search = this.get_val('display_search', true);
         this.system_apps = this.get_enum('system_apps',['gnome-control-center','gnome-terminal']);
-        this.display_shutdown = this.get_val('display_shutdown', true);
+        this.display_shutdown = this.get_val('display_shutdown', false);
         this.show_left_pane =  this.get_val('show_left_pane', true);
-        this.show_bottom_pane = this.get_val('show_bottom_pane', true);
+        this.show_bottom_pane = this.get_val('show_bottom_pane', false);
         this.max_bookmarks = this.get_val('max_bookmarks',this.defaultBookmarksCount);
-        this.searchentry_width = this.get_val('searchentry_width', 240);
+        this.searchentry_width = this.get_val('searchentry_width', 250);
         this.favorites_text = this.get_val('favorites_text', true);
         this.favorites_columns = this.get_val('favorites_columns',this.defaultFavColumns);
-        this.favorites_icon_size = this.get_val('favorites_icon_size',68);
+        this.favorites_icon_size = this.get_val('favorites_icon_size',64);
         this.category_with_scroll = this.get_val('category_with_scroll', false);
         this.category_icon_size = this.get_val('category_icon_size',24);
-        this.leftpane_icon_size = this.get_val('leftpane_icon_size',22);
-        this.application_icon_size = this.get_val('application_icon_size',32);
-        this.categories_box_width = this.get_val('categories_box_width',180);
+        this.leftpane_icon_size = this.get_val('leftpane_icon_size',16);
+        this.application_icon_size = this.get_val('application_icon_size',24);
+        this.categories_box_width = this.get_val('categories_box_width',250);
         this.smart_height = this.get_val('smart_height', true);
         this.axe_in_hotcorner = this.get_val('axe_in_hotcorner', false);
         this.click_on_category = this.get_val('click_on_category', false);
