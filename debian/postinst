@@ -27,9 +27,11 @@ EXITO() {
 case ${1} in
 	triggered)
 
-		if [ -n "$( which glib-compile-schemas )" ] && [ -x "$( which glib-compile-schemas )" ]; then
-			glib-compile-schemas /usr/share/glib-2.0/schemas || true
-		fi
+	if [ -n "$( which glib-compile-schemas )" ] && [ -x "$( which glib-compile-schemas )" ]; then
+		glib-compile-schemas /usr/share/glib-2.0/schemas || true
+	fi
+
+	;;
 
 	configure|'')
 	;;
