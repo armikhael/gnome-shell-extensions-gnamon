@@ -1,11 +1,9 @@
-gnome-shell-extensions-gnamon (1.0-2) unstable; urgency=low
+gnome-shell-extensions-gnamon (1.0) unstable; urgency=low
 
+  * [612d155] Limpiando documentos innecesarios de las extensiones. Añadiendo avorrides para varios schemas de las extensiones. Moviendo schemas a lugares correctos.
+  * [3a5fbe8] Añadiendo triggers para cativar la compilación de los schemas.
+  * [6ca0d8f] Corrigiendo estándares.
   * [fd7416e] Cambiando formato del paquete fuente.
-
- -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Fri, 11 Jan 2013 20:57:12 -0430
-
-gnome-shell-extensions-gnamon (1.0-1) unstable; urgency=low
-
   * Versión inicial con las extensiones: User Themes, Axe Menu,
     Settings Center, Media Player Indicator, Coverflow ALT+TAB,
     Dash to Dock, Frippery Shut Down Menu, Frippery Move Clock,
