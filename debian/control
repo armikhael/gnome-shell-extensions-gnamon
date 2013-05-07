@@ -14,4 +14,18 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, dconf-gsettings-backend |
   gsettings-backend, gnome-shell (>= 3.4), gnome-shell (<< 3.5),
   gir1.2-gtop-2.0, gnome-shell-extensions
 Description: Conjunto de extensiones para el tema Gnamon
-  Conjunto de extensiones para el tema Gnamon
+ Contiene las siguientes extensiones para el tema 'Gnamon':
+ .
+  * AXE Menu.
+  * Message Notifier.
+  * Remove Username.
+  * Status area horizontal spacing.
+  * Coverflow ALT-TAB.
+  * Move Clock.
+  * Dash to Dock.
+  * Nothing to do.
+  * Show Desktop.
+  * Window List.
+  * Old Network Manager.
+  * Shut Down Menu.
+  * Windows Overlay Icons.
