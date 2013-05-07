@@ -1,3 +1,13 @@
+gnome-shell-extensions-gnamon (1.0+1) unstable; urgency=low
+
+  [ Erick Birbe ]
+  * [da9a213] Eliminando extensión user-theme
+
+  [ Luis Alejandro Martínez Faneyth ]
+  * [c3d5d2e] Ampliando mensaje descriptivo.
+
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Mon, 06 May 2013 20:58:53 -0430
+
 gnome-shell-extensions-gnamon (1.0) unstable; urgency=low
 
   [ Luis Alejandro Martínez Faneyth ]
