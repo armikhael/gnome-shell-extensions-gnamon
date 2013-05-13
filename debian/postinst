@@ -25,18 +25,16 @@ EXITO() {
 }
 
 case ${1} in
-	triggered)
-
-	if [ -n "$( which glib-compile-schemas )" ] && [ -x "$( which glib-compile-schemas )" ]; then
-		for SCHEMA in $( ls -d1 /usr/share/gnome-shell/extensions/* ); do
-			glib-compile-schemas $SCHEMA/schemas || true
-			glib-compile-schemas /usr/share/glib-2.0/schemas || true
-		done
-	fi
-
-	;;
-
 	configure|'')
+		for SCHEMA in $( ls -d1 /usr/share/gnome-shell/extensions/* ); do
+			glib-compile-schemas /usr/share/glib-2.0/schemas || true
+
+			if [ -n "$( which glib-compile-schemas )" ] \
+			&& [ -x "$( which glib-compile-schemas )" ] \
+			&& [ -d $SCHEMA/schemas ]; then
+				glib-compile-schemas $SCHEMA/schemas || true
+			fi
+		done
 	;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)
