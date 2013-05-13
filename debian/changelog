@@ -1,3 +1,11 @@
+gnome-shell-extensions-gnamon (1.0+3) unstable; urgency=low
+
+  * [ff53995] Removiendo el disparador para /usr/share/glib-2.0/schemas y
+    moviendo rutina de compilación de schemas al target configure del
+    postinstall.
+
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Mon, 13 May 2013 09:03:03 -0430
+
 gnome-shell-extensions-gnamon (1.0+2) unstable; urgency=low
 
   * [823cc77] Agregando schemas a cada extensión. Habilitando rutina en el postinstall que compila los schemas de cada extensión.
