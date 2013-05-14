@@ -1,3 +1,12 @@
+gnome-shell-extensions-gnamon (1.0+4) unstable; urgency=low
+
+  * [372deb7] Removiendo schema interno de la extensión "Show Desktop
+    Button" para prevenir bug con el reconocimiento de los
+    .gschemas.override en /usr/share/glib-2.0/schemas/. Incluyendo
+    extensión "Extend Left Box".
+
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Tue, 14 May 2013 12:59:24 -0430
+
 gnome-shell-extensions-gnamon (1.0+3) unstable; urgency=low
 
   * [ff53995] Removiendo el disparador para /usr/share/glib-2.0/schemas y
