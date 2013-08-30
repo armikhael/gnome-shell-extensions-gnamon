@@ -364,7 +364,7 @@ ConfigManager.prototype = {
         this.categories_box_width = this.get_val('categories_box_width',250);
         this.smart_height = this.get_val('smart_height', true);
         this.axe_in_hotcorner = this.get_val('axe_in_hotcorner', false);
-        this.click_on_category = this.get_val('click_on_category', false);
+        this.click_on_category = this.get_val('click_on_category', true);
         this.search_tool = decodeURIComponent(this.get_val('search_tool', "gnome-search-tool"));
         this.stored_category_id = this.get_val('category_menu_id', null);
     },
