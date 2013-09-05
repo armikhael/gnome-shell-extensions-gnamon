@@ -189,7 +189,7 @@ CategoryButton.prototype = {
            this.icon = new St.Icon({icon_name: this.icon_name, icon_size: iconSize, icon_type: St.IconType.FULLCOLOR});
            
         }else{
-            this.icon = new St.Icon({icon_name: 'start-here', icon_size: iconSize, icon_type: St.IconType.SYMBOLIC});
+            this.icon = new St.Icon({icon_name: 'start-here-symbolic', icon_size: iconSize, icon_type: St.IconType.SYMBOLIC});
         }
         this.buttonbox.add_actor(this.icon);
         this.buttonbox.add(this.label, { y_align: St.Align.MIDDLE, y_fill: false });
@@ -317,7 +317,7 @@ ConfigManager.prototype = {
             Main.panel._rightBox.remove_actor(activitiesButton.actor);
         }
         this.button_label = decodeURIComponent(this.get_val('button_label', _("Menu")));
-        this.display_icon = this.get_val('display_icon', false);
+        this.display_icon = this.get_val('display_icon', true);
         this.is_hot_corner = this.get_val('is_hot_corner', false);
         if(!this.is_hot_corner){
             this.parent._hotCorner.actor.hide();
@@ -326,7 +326,7 @@ ConfigManager.prototype = {
             this.parent._hotCorner.actor.show();
             activitiesButton._hotCorner.actor.hide();
         }
-        this.icon_name = this.get_val('icon_name', 'start-here');
+        this.icon_name = this.get_val('icon_name', 'start-here-symbolic');
         this.parent._icon.set_icon_name(this.icon_name);
         this.start_with_fav = this.get_val('start_with_fav', false);
         if(!this.display_icon)
@@ -365,7 +365,7 @@ ConfigManager.prototype = {
         this.smart_height = this.get_val('smart_height', true);
         this.axe_in_hotcorner = this.get_val('axe_in_hotcorner', false);
         this.click_on_category = this.get_val('click_on_category', true);
-        this.search_tool = decodeURIComponent(this.get_val('search_tool', "gnome-search-tool"));
+        this.search_tool = decodeURIComponent(this.get_val('search_tool', "tracker-needle"));
         this.stored_category_id = this.get_val('category_menu_id', null);
     },
     saveConfig: function() {
@@ -720,7 +720,7 @@ ConfigDialog.prototype = {
         this.cm.set_val('button_label',encodeURIComponent(this.ButtonLabel.get_text()),_("Menu"));
         this.cm.set_val('display_icon',this.displayIconSwitch.state,true);
         this.cm.set_val('is_hot_corner',this.hotCornerSwitch.state,true);
-        this.cm.set_val('icon_name',this.IconNameEntry.get_text(),'start-here');
+        this.cm.set_val('icon_name',this.IconNameEntry.get_text(),'start-here-symbolic');
         this.cm.set_val('main_icon_size',this._setInt(this.MainIconEntry,18));
         this.cm.set_val('start_with_fav',this.startWithFavSwitch.state,true);
         this.cm.set_val('show_bottom_pane',this.showBottomSwitch.state,true);
@@ -748,7 +748,7 @@ ConfigDialog.prototype = {
         this.cm.set_val('smart_height',this.smartHeightSwitch.state,true);
         this.cm.set_val('axe_in_hotcorner',this.axeCornerSwitch.state,false);
         this.cm.set_val('click_on_category',this.clickOnCategorySwitch.state,false);
-        this.cm.set_val('search_tool',encodeURIComponent(this.SearchToolEntry.get_text()),"gnome-search-tool");
+        this.cm.set_val('search_tool',encodeURIComponent(this.SearchToolEntry.get_text()),"tracker-needle");
         this.cm.saveConfig();
     },
     resetToDefault: function(){
@@ -906,7 +906,7 @@ ApplicationsButton.prototype = {
         this._box = new St.BoxLayout({ name: 'axeMenu' });
         this._iconBox = new St.Bin();
         this._box.add(this._iconBox, { y_align: St.Align.MIDDLE, y_fill: false });
-        this._icon = new St.Icon({ icon_name: 'start-here', icon_size: 18, icon_type: St.IconType.SYMBOLIC, style_class: 'axemenu-icon' });
+        this._icon = new St.Icon({ icon_name: 'start-here-symbolic', icon_size: 18, icon_type: St.IconType.SYMBOLIC, style_class: 'axemenu-icon' });
         this._iconBox.child = this._icon;
         this._label = new St.Label({ track_hover: true, style_class: 'application-menu-button-label'});
         this._box.add(this._label, { y_align: St.Align.MIDDLE, y_fill: false });
