@@ -1,3 +1,10 @@
+gnome-shell-extensions-gnamon (1.0+7) unstable; urgency=low
+
+  * [ece6779] Para que los archviso de libreOficce se mantegan en la barra de tareas
+  * [56c94ce] Corrigiendo switcher para que AltTab no se quede colgado.
+
+ -- Carlos Espinoza <carlosarmikhael@gmail.com>  Mon, 28 Oct 2013 10:34:56 -0430
+
 gnome-shell-extensions-gnamon (1.0+6) unstable; urgency=low
 
   * [2c19bed] Cambiando icons display a True Icons predeterminado a start-here-symbolic Busqueda con tracker-needle
