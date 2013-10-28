@@ -528,7 +528,7 @@ Switcher.prototype = {
 			
 			this._shellwm.disconnect(this._dcid);
 			this._shellwm.disconnect(this._mcid);
-			this._windows = null;
+			this._windows = " ";
 			this._windowTitle = null;
 			this._icon = null;
 			this._applicationIconBox = null;
