@@ -621,7 +621,7 @@ AppList.prototype = {
             // We also need to monitor the state 'cause some pesky apps (namely: plugin_container left over after fullscreening a flash video)
             // don't report having zero windows after they close
             let appStateSignal = app.connect('notify::state', Lang.bind(this, function(app) {
-                if (app.state == Shell.AppState.STARTING && this._appList.contains(app)) {
+                if (app.state == Shell.AppState.STOPPED && this._appList.contains(app)) {
                     this._removeApp(app);
                 }
             }));
