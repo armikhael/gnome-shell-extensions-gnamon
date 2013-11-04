@@ -1,3 +1,9 @@
+gnome-shell-extensions-gnamon (1.0+8) unstable; urgency=low
+
+  * [514ea35] Devolviendo cambio
+
+ -- Carlos Espinoza <carlosarmikhael@gmail.com>  Mon, 04 Nov 2013 11:08:04 -0430
+
 gnome-shell-extensions-gnamon (1.0+7) unstable; urgency=low
 
   * [ece6779] Para que los archviso de libreOficce se mantegan en la barra de tareas
