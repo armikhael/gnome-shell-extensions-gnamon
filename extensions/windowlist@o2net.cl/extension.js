@@ -622,8 +622,17 @@ AppList.prototype = {
             // don't report having zero windows after they close
             let appStateSignal = app.connect('notify::state', Lang.bind(this, function(app) {
                 if (app.state == Shell.AppState.STOPPED && this._appList.contains(app)) {
-                    this._removeApp(app);
-                }
+                    
+                    if ( app.get_id() != 'libreoffice-writer.desktop'  &&
+						 app.get_id() != 'libreoffice-calc.desktop'    &&
+						 app.get_id() != 'libreoffice-impress.desktop' &&
+						 app.get_id() != 'libreoffice-draw.desktop'    &&
+						 app.get_id() != 'libreoffice-base.desktop'    &&
+						 app.get_id().replace(/[0-9\:]/g, '') == 'window'){
+                    
+						this._removeApp(app);
+					}
+				}
             }));
 
             this._appList.set(app, { appGroup: appGroup, signals: [appStateSignal] });
