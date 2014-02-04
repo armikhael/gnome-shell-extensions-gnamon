@@ -1,3 +1,9 @@
+gnome-shell-extensions-gnamon (1.1) kukenan; urgency=medium
+
+  * [b64e751] Removiendo la extensión axemenu
+
+ -- Erick Birbe <erickcion@gmail.com>  Tue, 04 Feb 2014 15:26:06 -0430
+
 gnome-shell-extensions-gnamon (1.0+9) unstable; urgency=low
 
   * [4c7b00d] Para que los archviso de libreOficce se mantegan en la barra de tareas
