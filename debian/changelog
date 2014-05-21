@@ -1,3 +1,26 @@
+gnome-shell-extensions-gnamon (1.10) kukenan; urgency=low
+
+  * [481ac3e] Cambiando idioma de Settings Center
+  * [d7a7b46] Idioma de apps en Settings Center
+
+ -- Carlos Espinoza <carlosarmikhael@gmail.com>  Wed, 21 May 2014 16:16:47 -0430
+
+gnome-shell-extensions-gnamon (1.10) kukenan; urgency=low
+
+  * [481ac3e] Cambiando idioma de Settings Center
+  * [d7a7b46] Idioma de apps en Settings Center
+
+ -- Carlos Espinoza <carlosarmikhael@gmail.com>  Wed, 21 May 2014 16:16:29 -0430
+
+gnome-shell-extensions-gnamon (1.10) kukenan; urgency=low
+
+  [ canaima ]
+  * UNRELEASED
+
+  [ Carlos Espinoza ]
+
+ -- Carlos Espinoza <carlosarmikhael@gmail.com>  Wed, 21 May 2014 16:15:43 -0430
+
 gnome-shell-extensions-gnamon (1.1) kukenan; urgency=medium
 
   * [b64e751] Removiendo la extensión axemenu
