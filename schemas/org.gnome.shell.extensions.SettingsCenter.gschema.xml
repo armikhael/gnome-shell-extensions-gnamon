@@ -2,7 +2,7 @@
 <schemalist gettext-domain="gnome-shell-extensions-SettingsCenter">
   <schema path="/org/gnome/shell/extensions/SettingsCenter/" id="org.gnome.shell.extensions.SettingsCenter">
     <key name="label-menu" type="s">
-      <default>'Settings Center'</default>
+      <default>'Centro de Ajustes'</default>
       <summary>Label Menu</summary>
       <description/>
     </key>
